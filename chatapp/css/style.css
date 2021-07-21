@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "rubik";
+    src: url("src/frontend-projects/chatapp/fonts/Rubik-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "rubik";
+    src: url("src/frontend-projects/chatapp/fonts/Rubik-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "rubik";
+    src: url("src/frontend-projects/chatapp/fonts/Rubik-Regular.ttf");
+    font-weight: 400;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+    font-family: "rubik";
+    font-weight: 400; 
+    font-size: 0.6rem;
+    line-height: 150%;
+    background-color:  hsl(270, 17%, 98%);
+}
+
+svg{
+    height: 12px;
+}
+
+svg path{
+    fill: hsl(0, 0%, 100%);
+}
+
+.container{
+    display: flex;
+}
+
+div.attribution {
+    font-size: 15px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;   
+    padding: 85px 0;
+}
+
+.phone{
+    padding: 10px;
+    width: 20rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 35px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0,0, 0.20);
+}
+
+.wrap{
+    background-color:  hsl(270, 20%, 96%);
+    border-radius: 25px;
+}
+
+.division{
+    background-color:hsl(0, 0%, 100%);
+    width: 10rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    transform: translateY(-40%);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.avatar{
+    position: relative;
+    bottom: 1.75rem;
+    border-radius: 25px 25px 10px 10px; 
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    background:linear-gradient(to left,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.avatar img{
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);;
+}
+
+.position{
+    margin-left: auto;
+}
+
+.more--detail{
+    color: hsl(0, 0%, 100%);
+    margin-left: 10px;   
+}
+
+.more--detail h3{
+    font-family: "rubik";
+    font-weight: 500;
+}
+
+.more--detail p{
+    margin-top: 5px;
+    color: hsl(289, 100%, 72%);
+}
+
+
+.conversation{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.question{
+    background-color: hsl(270, 20%, 90%);
+    color: hsl(276, 55%, 52%);
+    padding: 8px;
+    border-radius: 10px 10px 10px 0;
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+
+.dog--pictures{
+    max-width: 68%;
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: message 0.8s ease-in-out 7s backwards;
+}
+
+.dog--pictures img{
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.answer{
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(271, 15%, 43%);
+    padding: 8px;
+    border-radius: 10px 10px 0 10px;
+    max-width: 70%;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+
+.choice{
+    background:linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 10px;
+    width: 85%;
+    border-radius: 10px 10px 10px 0;
+    margin-bottom: 10px;
+}
+
+.choice p{
+    margin-left: 5px;
+}
+
+.circle{
+    content:"";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border:1px solid hsl(293, 100%, 63%);
+}
+
+.price{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: auto
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    color: lightgrey;
+    width: 100%;
+    padding:5px;
+    border-radius: 30px;
+    margin: 10px 0;
+
+}
+
+.send{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:hsl(271, 36%, 24%);
+    display: flex;
+    align-items: center;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 42%;
+    margin-left: 150px;
+    height: 50%;   
+
+}
+
+.info h1{
+    font-family: "rubik";
+    font-weight: 500;
+    font-size: 2.5rem;
+    color:hsl(271, 36%, 24%); 
+    margin-bottom: 45px;
+}
+
+
+.info p{
+    color: hsl(270, 7%, 64%);
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  height: 35rem;
+  width: 35rem;
+  border-bottom-left-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  background:linear-gradient(to bottom,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+
+.main::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -20rem;
+    height: 35rem;
+    width:37rem;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background-color: hsl(270, 20%, 96%);
+    z-index: -5;
+}
+
+/*loading*/
+
+@keyframes message{
+    0% {
+        transform: translateX(-5%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes choice{
+    0%{
+        transform: rotate(0deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.question1{
+
+    transform: translateX(0%);
+    animation: message 0.8s ease-in-out .5s backwards;
+}
+
+.question2{
+    
+    transform: translateX(0%);
+    animation: message 0.8s ease-in-out 3s backwards;
+}
+
+.question3{
+
+    transform: translateX(0%);
+    animation: message 0.8s ease-in-out 13s backwards;
+
+}
+
+.answer1{
+
+    transform: translateX(0%);
+    animation: message 0.8s ease-in-out 9s backwards;
+
+}
+
+
+.answer2{
+
+    transform: translateX(0%);
+    animation: message 0.8s ease-in-out 11s backwards;
+
+}
+
+.choice1{
+    transform: rotate(360deg);
+    animation:choice 0.5s ease-out 16s backwards;
+}
+
+.choice2{
+    transform: rotate(360deg);
+    animation:choice 0.5s ease-out 18s backwards;
+}
+
+
+@media only screen and ( max-width:835px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    .main{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;  
+        padding: 0;           
+    }
+
+    
+    .info{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 70px;
+        margin-left: 0;
+    }
+    
+    .info p{
+        padding: 0 45px;
+    }
+
+    .main::after{
+        display: none;
+    }
+
+
+}
